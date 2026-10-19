@@ -37,7 +37,8 @@ body {
 .table-style th,
 .table-style td {
     border: 1px solid #050505;
-    padding: 8px;
+    border-collapse: collapse;
+    padding: 6px;
     text-align: left;
 }
 /* horizontal Navigation bar */
