@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>   
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A quiz about web servers.">
+        <meta name="author" content="Jinghui Liu">
+        <title>Quiz</title>
+        <link rel="stylesheet" href="style.css">
+    </head>    
+
+    <body class="light-gray">
+        <!-- header -->
+        <header class="center">
+            <h1>Web Servers Quiz</h1>
+            <h3>A project for IT3203</h3>  
+        </header>
+        <!-- Navigation menu -->
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="topic1.html">History</a></li>
+                <li><a href="topic2.html">Apache and Nginx</a></li>
+                <li><a href="references.html">References</a></li>
+                <li><a href="concepts.html">Key Concepts</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <!-- quiz code -->
+        <div class="container">
+            <h3 id="title">Quiz</h3>
+            <p>Test if you have learned something from the website. You have ten minutes to complete the quiz.</p>
+            <div class="timer">
+                <p>Time Left:</p> <span id="quiz-timer">10:00</span>
+            </div>
+            <form id="quiz-form" class="quiz-container">
+                <div class="quiz-question">
+                    <p>1. What is the full name of HTTP?</p>
+                    <label><input type="radio" name="q1" value="A"> Hypertext Transfer Protocol</label><br>
+                    <label><input type="radio" name="q1" value="B"> HyperText Transmission Protocol</label><br>
+                    <label><input type="radio" name="q1" value="C"> Hyperlink Transfer Protocol</label><br>
+                    <label><input type="radio" name="q1" value="D"> Hypertext Transmission Protocol</label>
+                </div>
+
+                <div class="quiz-question">
+                    <p>2. When was the first web server created?</p>
+                    <label><input type="radio" name="q2" value="A"> 1990</label><br>
+                    <label><input type="radio" name="q2" value="B"> 1991</label><br>
+                    <label><input type="radio" name="q2" value="C"> 1992</label><br>
+                    <label><input type="radio" name="q2" value="D"> 1993</label>
+                </div>
+
+                <div class="quiz-question">
+                    <p>3. What is CSS used for?</p>
+                    <label><input type="radio" name="q3" value="A"> To style the appearance of a web page</label><br>
+                    <label><input type="radio" name="q3" value="B"> To structure the content of a web page</label><br>
+                    <label><input type="radio" name="q3" value="C"> To add interactivity to a web page</label><br>
+                    <label><input type="radio" name="q3" value="D"> To embed multimedia content in a web page</label>
+                </div>
+
+                <div class="quiz-question">
+                    <p>4. Fill in the blank: HTML stands for <strong>HyperText ________ Language</strong>.</p>
+                    <input type="text" name="q4" placeholder="Answer(First letter must be capitalized)" style="width: 40%; padding: 8px;">
+                </div>
+
+                <div class="quiz-question">
+                    <p>5. Fill in the blank: CDN stands for <strong>Content ________ Network</strong>.</p>
+                    <input type="text" name="q5" placeholder="Answer(First letter must be capitalized)" style="width: 40%; padding: 8px;">
+                </div>
+                <div class="quiz-question">
+                    <p>6. Select the two web servers this website talks about.</p>
+                    <label><input type="checkbox" name="q6" value="A"> Apache</label><br>
+                    <label><input type="checkbox" name="q6" value="B"> Nginx</label><br>
+                    <label><input type="checkbox" name="q6" value="C"> IIS</label><br>
+                    <label><input type="checkbox" name="q6" value="D"> Lighttpd</label>
+                </div>
+                <div class="quiz-nav-container">
+                    <button type="submit" id="submit-answer">Submit</button>
+                </div>
+            </form>
+            <div class="container">
+                <a href="quiz.html" id="retake-quiz" hidden>Retake Quiz</a>
+                <div id="quiz-result"></div>
+                <div id="incorrect-questions" hidden>
+                    <h3>Incorrect Questions</h3>
+                    <ul></ul>
+                </div>
+                <div id="correct-answers" hidden>
+                    <h3>Correct Answers</h3>
+                    <ol>
+                        <li>Hypertext Transfer Protocol</li>
+                        <li>1991</li>
+                        <li>To style the appearance of a web page</li>
+                        <li>Markup</li>
+                        <li>Delivery</li>
+                        <li>Apache and Nginx</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <script src="quiz.js"></script>
+    </body>
+
+</html>     
