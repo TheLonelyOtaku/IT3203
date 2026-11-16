@@ -90,7 +90,7 @@ body {
     display: flex;
     justify-content: center;
 }
-
+/* retake and submit buttons */
 #submit-answer,
 #retake-quiz {
     padding: 10px 20px;
